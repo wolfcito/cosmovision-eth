@@ -2,11 +2,11 @@
 
 pragma solidity >=0.7.0 <0.9.0;
 
-import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
+import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 import "@openzeppelin/contracts/access/AccessControl.sol";
 import "@openzeppelin/contracts@4.6.0/utils/Counters.sol";
 
-contract ColeccionCosmovision is ERC721, AccessControl {
+contract ColeccionCosmovision is ERC721URIStorage, AccessControl {
     using Counters for Counters.Counter;
 
     Counters.Counter public tokenIdCounter;
@@ -98,7 +98,7 @@ contract ColeccionCosmovision is ERC721, AccessControl {
         donations.push(tempDonation);
     }
 
-    function createMember(string memory nameAssociate, address account) public onlyAdmin{
+    function createAssociate(string calldata nameAssociate, address account) public onlyAdmin{
         _grantRole(ROL_SOCIO, account);
         Associate memory tempAssociate;
         tempAssociate.walletAssociate = msg.sender;
@@ -106,12 +106,18 @@ contract ColeccionCosmovision is ERC721, AccessControl {
         associates.push(tempAssociate);
     }
 
-    function mint() public {
+    function mint(string calldata urlJsonUri) public onlyHistoriographer {
         uint256 tokenId = tokenIdCounter.current();
         tokenIdCounter.increment();
         _safeMint(mainAddress, tokenId);
-        
-        // Falta logica aún aquí
-        //_setTokenURI(tokenId, urlMetadata);
+        _setTokenURI(tokenId, urlJsonUri);
+    }
+
+    function getAllDonors() public view returns(Donation[] memory){
+       return donations;
+    }
+
+    function getAllAssociate() public view returns(Associate[] memory){
+       return associates;
     }
 }
