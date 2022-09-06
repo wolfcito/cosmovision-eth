@@ -7,17 +7,17 @@ import { makeStyles } from "@material-ui/core/styles";
 // core components
 import GridContainer from "/components/Grid/GridContainer.js";
 import GridItem from "/components/Grid/GridItem.js";
-import CustomInput from "/components/CustomInput/CustomInput.js";
-import Button from "/components/CustomButtons/Button.js";
+  import CustomInput from "/components/CustomInput/CustomInput.js";
+  import Button from "/components/CustomButtons/Button.js";
 
-import styles from "/styles/jss/nextjs-material-kit/pages/landingPageSections/workStyle.js";
+  import styles from "/styles/jss/nextjs-material-kit/pages/landingPageSections/workStyle.js";
 
-const useStyles = makeStyles(styles);
+  const useStyles = makeStyles(styles);
 
-export default function CTA() {
-  const classes = useStyles();
-  return (
-    <div className={classes.section}>
+  export default function CTA() {
+    const classes = useStyles();
+    return (
+      <div className={classes.section} style={{marginTop: -150, padding: "70px 24px"}}>
       <GridContainer justify="center">
         <GridItem cs={12} sm={12} md={7} style={{ display: 'flex', flexDirection: 'column' }}>
           <h2 className={classes.title}>Be part of the Tribe</h2>

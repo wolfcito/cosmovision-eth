@@ -38,7 +38,7 @@ export default function ProjectSection() {
       </GridContainer>
       <div>
         <GridContainer>
-          <GridItem xs={12} sm={12} md={6} style={{ marginTop: '150px' }}>
+          <GridItem xs={12} sm={12} md={6} style={{ margin: "50px 0" }}>
             <div style={{ 
               borderRadius: '50%',
               width: '300px',
@@ -55,7 +55,7 @@ export default function ProjectSection() {
               src={ImageOne.src} alt='descentralized' />
             </div>
           </GridItem>
-          <GridItem xs={12} sm={12} md={6} style={{ marginTop: '150px' }}>
+          <GridItem xs={12} sm={12} md={6} style={{ margin: "50px 0" }}>
             <InfoArea
               title="A descentralized solution"
               description="Cosmovision seeks to use Blockchain technology to preserve the customs, values and teachings of these communities that have shaped the entire Latin American region over the years. With a decentralized approach, we can ensure that all this legacy is secure in a digital environment. And granting the authenticity of all information that will be preserved for the future."
@@ -63,7 +63,7 @@ export default function ProjectSection() {
               vertical
             />
           </GridItem>
-          <GridItem xs={12} sm={12} md={6} style={{ marginTop: '150px' }}>
+          <GridItem xs={12} sm={12} md={6} style={{ margin: "50px 0" }}>
             <InfoArea
               title="Real impact"
               description="The purpose of the preservation project is also to provide a form of sustenance and support to these communities. In future phases, the project seeks to relate these NFTs directly with material that can be produced by the indigenous communities. With the funds raised in the project, donations will be made that will allow the conservation of the natural spaces where these communities are located and help these communities."
@@ -71,7 +71,7 @@ export default function ProjectSection() {
               vertical
             />
           </GridItem>
-          <GridItem xs={12} sm={12} md={6} style={{ marginTop: '150px' }}>
+          <GridItem xs={12} sm={12} md={6} style={{ margin: "50px 0" }}>
             <div style={{ 
               borderRadius: '50%',
               width: '300px',
@@ -88,7 +88,7 @@ export default function ProjectSection() {
               src={ImageThree.src} alt='helping communities' />
             </div>
           </GridItem>
-          <GridItem xs={12} sm={12} md={6} style={{ marginTop: '150px' }}>
+          <GridItem xs={12} sm={12} md={6} style={{ margin: "50px 0" }}>
             <div style={{ 
               borderRadius: '50%',
               width: '300px',
@@ -105,7 +105,7 @@ export default function ProjectSection() {
               src={ImageTwo.src} alt='iterative' />
             </div>
           </GridItem>
-          <GridItem xs={12} sm={12} md={6} style={{ marginTop: '150px' }}>
+          <GridItem xs={12} sm={12} md={6} style={{ margin: "50px 0" }}>
             <InfoArea
               title="Imagined to grow"
               description='With the help of volunteers, we will be in charge of capturing and validating the preserved information; we also expect to include auction features in the following updates. We plan to divide the preservation of specific communities into "Collections" so that all participants and patrons can focus on the cultures that most appeal to them.'

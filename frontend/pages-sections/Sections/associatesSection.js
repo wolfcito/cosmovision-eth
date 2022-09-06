@@ -29,14 +29,14 @@ export default function AssociateSection() {
       <GridContainer justify="center">
         <GridItem xs={12} sm={12} md={8}>
           <h2 className={classes.title}>Associates</h2>
-          <h4>
+          <h4 style={{color: "gray"}}>
           Muchas personas han encontrado un significado especial en lo que hacemos y quieren colaborar de mayor manera en preservar la mayor cantidad de información, artilegios, artesanias, pensamientos etc. es por ello que han decidido hacerse socios del proyecto para estar mas cerca y colaborar de una manera mas representativa
           </h4>
         </GridItem>
       </GridContainer>
       <div>
         <GridContainer>
-          <GridItem xs={12} sm={12} md={6} style={{ marginTop: '150px' }}>
+          <GridItem xs={12} sm={12} md={6} style={{ margin: "50px 0px" }}>
             <div style={{ 
               borderRadius: '50%',
               width: '300px',
@@ -53,7 +53,7 @@ export default function AssociateSection() {
               src={Donnors1.src} alt='descentralized' />
             </div>
           </GridItem>
-          <GridItem xs={12} sm={12} md={6} style={{ marginTop: '150px' }}>
+          <GridItem xs={12} sm={12} md={6} style={{ margin: "50px 0px", alignSelf: "center" }}>
             <InfoArea
               title="Love for Latin American cultures"
               description="All donations reached the different tribes, ethnic groups, communities that represent our entire culture and our past."
@@ -61,7 +61,7 @@ export default function AssociateSection() {
               vertical
             />
           </GridItem>
-          <GridItem xs={12} sm={12} md={12} style={{ marginTop: '150px' }}>
+          <GridItem xs={12} sm={12} md={12} style={{ marginTop: 50 }}>
             <InfoArea
               title="Wallets joined to the collection"
               description='0x5B38Da6a701c568545dCfcB03FcB875f56beddC4

@@ -33,7 +33,7 @@ export default function ListDonnors() {
       </GridContainer>
       <div>
         <GridContainer>
-          <GridItem xs={12} sm={12} md={6} style={{ marginTop: '150px' }}>
+          <GridItem xs={12} sm={12} md={6} style={{ margin: "50px 0" }}>
             <div style={{ 
               borderRadius: '50%',
               width: '300px',
@@ -50,7 +50,7 @@ export default function ListDonnors() {
               src={Donnors1.src} alt='descentralized' />
             </div>
           </GridItem>
-          <GridItem xs={12} sm={12} md={6} style={{ marginTop: '150px' }}>
+          <GridItem xs={12} sm={12} md={6} style={{ margin: "50px 0", alignSelf: "center" }}>
             <InfoArea
               title="Love for Latin American cultures"
               description="All donations reached the different tribes, ethnic groups, communities that represent our entire culture and our past."
@@ -58,7 +58,7 @@ export default function ListDonnors() {
               vertical
             />
           </GridItem>
-          <GridItem xs={12} sm={12} md={12} style={{ marginTop: '150px' }}>
+          <GridItem xs={12} sm={12} md={12} style={{ margin: "50px 0" }}>
             <InfoArea
               title="Wallets joined to the collection"
               description='0x5B38Da6a701c568545dCfcB03FcB875f56beddC4
