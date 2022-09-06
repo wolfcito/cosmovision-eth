@@ -4,7 +4,7 @@ pragma solidity >=0.7.0 <0.9.0;
 
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 import "@openzeppelin/contracts/access/AccessControl.sol";
-import "@openzeppelin/contracts@4.6.0/utils/Counters.sol";
+import "@openzeppelin/contracts/utils/Counters.sol";
 
 contract ColeccionCosmovision is ERC721URIStorage, AccessControl {
     using Counters for Counters.Counter;
