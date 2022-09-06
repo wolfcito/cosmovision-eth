@@ -19,7 +19,6 @@ import styles from "/styles/jss/nextjs-material-kit/pages/landingPage.js";
 // Sections for this page
 import RoadmapSection from "/pages-sections/Sections/RoadmapSection.js";
 
-
 // Logos
 import logoWhite from "../public/img/logo_white.png";
 import logoDark from "../public/img/logo.png";

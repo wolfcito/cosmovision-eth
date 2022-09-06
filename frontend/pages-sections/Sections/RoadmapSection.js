@@ -3,7 +3,6 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 
 // @material-ui/icons
-import AccountTree from "@material-ui/icons/AccountTree";
 import GroupIcon from '@material-ui/icons/Group';
 // core components
 import GridContainer from "/components/Grid/GridContainer.js";

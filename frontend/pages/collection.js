@@ -18,8 +18,7 @@ import Parallax from "/components/Parallax/Parallax.js";
 import styles from "/styles/jss/nextjs-material-kit/pages/landingPage.js";
 
 // Sections for this page
-import ProjectSection from "/pages-sections/Sections/ProjectSection.js";
-import CTA from "/pages-sections/Sections/CTA.js";
+import CollectionSection from "/pages-sections/Sections/CollectionSection.js";
 
 // Logos
 import logoWhite from "../public/img/logo_white.png";
@@ -69,8 +68,7 @@ export default function LandingPage(props) {
       </Parallax>
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
-          <ProjectSection />
-          <CTA />
+          <CollectionSection />
         </div>
       </div>
       <Footer />
