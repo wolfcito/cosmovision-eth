@@ -62,7 +62,7 @@ const SaveHistory = () => {
             rel="noopener noreferrer"
             style={{ marginTop: '30px' }}
           >
-            <i className="fas fa-play" />
+            <i className="fas fa-play" style={{paddingRight: 12}} />
             Save
           </Button>
         </GridItem>

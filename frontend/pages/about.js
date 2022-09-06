@@ -68,7 +68,7 @@ export default function LandingPage(props) {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fas fa-play" />
+                <i className="fas fa-play" style={{paddingRight: 12}}/>
                 Join the Tribe
               </Button>
             </GridItem>

@@ -34,7 +34,7 @@ import GridItem from "/components/Grid/GridItem.js";
             rel="noopener noreferrer"
             style={{ marginTop: '30px'}}
             >
-            <i className="fas fa-play" />
+            <i className="fas fa-play" style={{paddingRight: 12}}/>
             Join the Tribe
           </Button>
         </GridItem>
