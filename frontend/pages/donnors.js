@@ -18,7 +18,7 @@ import Parallax from "/components/Parallax/Parallax.js";
 import styles from "/styles/jss/nextjs-material-kit/pages/landingPage.js";
 
 // Sections for this page
-import ListDonnors from "/pages-sections/Sections/listDonnors.js";
+import DonnorsSection from "/pages-sections/Sections/donnorsSection.js";
 
 
 // Logos
@@ -29,7 +29,7 @@ const dashboardRoutes = [];
 
 const useStyles = makeStyles(styles);
 
-export default function LandingPage(props) {
+export default function Donnors(props) {
   const classes = useStyles();
   const { ...rest } = props;
 
@@ -66,7 +66,7 @@ export default function LandingPage(props) {
       </Parallax>
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
-          <ListDonnors />
+          <DonnorsSection />
         </div>
       </div>
       <Footer />
