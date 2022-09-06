@@ -60,15 +60,15 @@ export default function ListDonnors() {
           </GridItem>
           <GridItem xs={12} sm={12} md={6} style={{ marginTop: '150px' }}>
             <InfoArea
-              title="A descentralized solution"
-              description="Cosmovision seeks to use Blockchain technology to preserve the customs, values and teachings of these communities that have shaped the entire Latin American region over the years. With a decentralized approach, we can ensure that all this legacy is secure in a digital environment. And granting the authenticity of all information that will be preserved for the future."
+              title="Love for Latin American cultures"
+              description="All donations reached the different tribes, ethnic groups, communities that represent our entire culture and our past."
               icon={AccountTree}
               vertical
             />
           </GridItem>
           <GridItem xs={12} sm={12} md={12} style={{ marginTop: '150px' }}>
             <InfoArea
-              title="Imagined to grow"
+              title="Wallets joined to the collection"
               description='0x5B38Da6a701c568545dCfcB03FcB875f56beddC4
               0xAb8483F64d9C6d1EcF9b849Ae677dD3315835cb2
               0x4B20993Bc481177ec7E8f571ceCaE8A9e22C02db

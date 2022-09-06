@@ -36,11 +36,6 @@ export default function HeaderLinks(props) {
         </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Button href="/donnors" color="transparent" className={classes.navLink}>
-          Donnors
-        </Button>
-      </ListItem>
-      <ListItem className={classes.listItem}>
         <Button href="/about" color="transparent" className={classes.navLink}>
           About us
         </Button>
@@ -52,6 +47,11 @@ export default function HeaderLinks(props) {
           className={classes.navLink}
         >
           Historiographer
+        </Button>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Button href="/donnors" color="transparent" className={classes.navLink}>
+          Donnors
         </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
