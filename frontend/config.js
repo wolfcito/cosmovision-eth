@@ -1,0 +1,1 @@
+export const abiAddress="0x2002a51042D97B6cA8969D2c17275Ba37c76677b"
