@@ -59,11 +59,11 @@ export default function HeaderLinks(props) {
           Associates
         </Button>
       </ListItem>
-      {/* <ListItem className={classes.listItem}>
+      <ListItem className={classes.listItem}>
         <Button href="/roadmap" color="transparent" className={classes.navLink}>
           Roadmap
         </Button>
-      </ListItem> */}
+      </ListItem>
     </List>
   )
 }
