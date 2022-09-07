@@ -1,4 +1,5 @@
-import React from "react";
+
+import {useState} from "react";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // @material-ui/core components
@@ -11,26 +12,41 @@ import Header from "/components/Header/Header.js";
 import Footer from "/components/Footer/Footer.js";
 import GridContainer from "/components/Grid/GridContainer.js";
 import GridItem from "/components/Grid/GridItem.js";
-import Button from "/components/CustomButtons/Button.js";
 import HeaderLinks from "/components/Header/HeaderLinks.js";
 import Parallax from "/components/Parallax/Parallax.js";
 
 import styles from "/styles/jss/nextjs-material-kit/pages/landingPage.js";
 
 // Sections for this page
-import CollectionSection from "/pages-sections/Sections/CollectionSection.js";
+import NftsSection from "../../../pages-sections/Sections/NftsSection"
 
 // Logos
-import logoWhite from "../public/img/logo_white.png";
-import logoDark from "../public/img/logo.png";
+import logoWhite from "../../../public/img/logo_white.png";
+import logoDark from "../../../public/img/logo.png";
+
+import { useRouter } from "next/router"
+import { element } from "prop-types";
 
 const dashboardRoutes = [];
 
 const useStyles = makeStyles(styles);
 
-export default function LandingPage(props) {
+const initialState = [
+  {
+    address: "0x95aba30738d8beeeacbaafa26365f8fd184b353c",
+    title: "A social project...",
+    name: "Kichwa Community",
+    description: `The Kichwa people are made up of those descendants of indigenous or native peoples who were "quechuized" during different historical periods, especially in the colony. The result of the implantation of Quechua caused the disappearance of the original language in many towns or, in other cases, the reduction of its use to a few individuals (CORPI, 2002).`,
+    image: "https://ep00.epimg.net/elpais/imagenes/2017/05/16/album/1494949413_951320_1494950607_album_normal.jpg"
+  },
+]
+
+export default function CollectionById(props) {
   const classes = useStyles();
   const { ...rest } = props;
+
+  const {query} = useRouter()
+  const [info, setInfo] = useState(initialState.find(element => element.address == query.address) || {})
 
   const brand = {
     dark: logoDark,
@@ -55,20 +71,17 @@ export default function LandingPage(props) {
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
-              <h1 className={classes.title}>Collections</h1>
+              <h1 className={classes.title}>{info?.name}</h1>
               <h4>
-                Each culture is a completely different world, here you can find
-                the collections that we have started to support and whose legacy
-                we are preserving in the Blockchain. From the second phase these
-                collections will start to increase.
+                {info?.description}
               </h4>
             </GridItem>
           </GridContainer>
         </div>
       </Parallax>
       <div className={classNames(classes.main, classes.mainRaised)}>
-        <div className={classes.container}>
-          <CollectionSection />
+        <div className={classes.container} style={{paddingBlock: 4}}>
+          <NftsSection address={query.address}/>
         </div>
       </div>
       <Footer />

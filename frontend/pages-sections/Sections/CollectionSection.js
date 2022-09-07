@@ -38,7 +38,6 @@ export default function CollectionSection() {
       <GridContainer style={{flex: 1}}>
         {collections.map(element => (
           <GridItem>
-            <h2 className={classes.title}>{element.name}</h2>
             <GridContainer style={{ alignItems: "center" }}>
               <GridItem xs={12} sm={12} md={6} style={{ margin: "12px 0"}}>
                 <div style={{ 
@@ -47,15 +46,17 @@ export default function CollectionSection() {
                   height: '300px',
                   position: 'relative',
                   overflow: 'hidden',
-                  margin: '0 auto'
+                  margin: '0 auto',
+                  display: 'flex',
+                  justifyContent: 'center'
                 }}>
                   <img style={{
                     width: 'auto',
                     height: '100%',
-                    marginLeft: '-100px'
                   }} 
                   src={element.image} alt='descentralized' />
                 </div>
+                <h2 className={classes.title}>{element.name}</h2>
               </GridItem>
               <GridItem xs={12} sm={12} md={6} style={{ margin: "50px 0" }}>
                 <InfoArea
