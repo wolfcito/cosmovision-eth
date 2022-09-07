@@ -58,7 +58,7 @@ export default function LandingPage(props) {
             <GridItem xs={12} sm={12} md={6}>
               <h1 className={classes.title}>Cosmovision</h1>
               <h4>
-                The term "cosmovision" refers to the beliefs, values and knowledge systems that articulate the social life of indigenous groups. With time, knowledge has been lost; we want to preserve it in a decentralized and perpetual way.
+                {`The term "cosmovision" refers to the beliefs, values and knowledge systems that articulate the social life of indigenous groups. With time, knowledge has been lost; we want to preserve it in a decentralized and perpetual way.`}
               </h4>
               <br />
               <Button

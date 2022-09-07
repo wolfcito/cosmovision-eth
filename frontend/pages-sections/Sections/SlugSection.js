@@ -20,14 +20,13 @@ const useStyles = makeStyles(styles);
 export default function SlugSection() {
   const classes = useStyles();
     return (
-      <div className={classes.section} style={{marginTop: -150, padding: "70px 24px"}}>
+      <div className={classes.section} style={{padding: "36px 24px 54px 24px"}}>
       <GridContainer>
-        <GridItem style={{ display: 'flex', flexDirection: 'row', justifyContent: "space-between", alignItems: "center" }}>
+        <GridItem style={{ display: 'flex', flexDirection: 'row', justifyContent: "center", alignItems: "center", flexWrap: "wrap", columnGap: 335, rowGap: 36}}>
           <h2 className={classes.title} style={{margin: 0, fontSize: "2rem"}}>Be part of the Tribe</h2>
           <Button
             color="danger"
             size="lg"
-            href="/collection"
             target="_blank"
             rel="noopener noreferrer"
             >
