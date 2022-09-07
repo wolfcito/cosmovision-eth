@@ -23,6 +23,7 @@ const useStyles = makeStyles(styles);
 
 const initialState = [
   {
+    address: "0x95aba30738d8beeeacbaafa26365f8fd184b353c",
     title: "A social project...",
     name: "Kichwa Community",
     description: "The Kichwa are an indigenous population of approximately 55,000 people who inhabit the Ecuadorian jungle, which stretches from the Andean foothills to the Amazon lowlands. They know the threats to their way of life and their territory, an area that covers more than one million hectares (2.5 million acres), won...",
@@ -65,7 +66,9 @@ export default function CollectionSection() {
                   icon={AccountTree}
                   vertical
                 />
-                <Button>
+                <Button
+                  href={`/collection/${element.address}`}
+                >
                   NFT's of {element.name} collection
                 </Button>
               </GridItem>
