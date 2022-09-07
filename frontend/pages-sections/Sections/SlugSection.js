@@ -1,4 +1,3 @@
-import React from "react";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 
@@ -19,19 +18,49 @@ const useStyles = makeStyles(styles);
 
 export default function SlugSection() {
   const classes = useStyles();
+
+  const handleAppear = () => {
+    const blockRef = document.getElementById("blockRef")
+    if(blockRef.style.display == "flex"){
+      blockRef.style.display = "none"
+    } else {
+      blockRef.style.display = "flex"
+    }
+  }
     return (
-      <div className={classes.section} style={{padding: "36px 24px 54px 24px"}}>
+      <div className={classes.section} style={{padding: 0}}>
       <GridContainer>
-        <GridItem style={{ display: 'flex', flexDirection: 'row', justifyContent: "center", alignItems: "center", flexWrap: "wrap", columnGap: 335, rowGap: 36}}>
-          <h2 className={classes.title} style={{margin: 0, fontSize: "2rem"}}>Be part of the Tribe</h2>
+        <GridItem style={{ display: 'flex', flexDirection: 'row', justifyContent: "center", alignItems: "center", flexWrap: "wrap", columnGap: 335, rowGap: 36, padding: "36px 24px 54px 24px"}}>
+          <h2 className={classes.title} style={{margin: 0, fontSize: "2rem"}}>Support our project</h2>
           <Button
             color="danger"
             size="lg"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={handleAppear}
             >
             <AddCircleOutlineIcon style={{marginRight: 12}}/>
-            Make your donation
+            Donate
+          </Button>
+        </GridItem>
+        <GridItem id="blockRef" style={{ display: 'none', flexDirection: 'row', justifyContent: "center", alignItems: "center", flexWrap: "wrap", rowGap: 12, padding: "36px 24px 54px 24px"}}>
+          <CustomInput
+            id="regular"
+            inputProps={{
+              placeholder: "Introduce the amount of ether you want to donate",
+            }}
+            formControlProps={{
+              fullWidth: true
+            }}
+          />
+          <Button
+            color="danger"
+            size="lg"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{width: "100%"}}
+            >
+            Donate
           </Button>
         </GridItem>
       </GridContainer>

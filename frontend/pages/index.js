@@ -66,7 +66,7 @@ export default function LandingPage(props) {
               <Button
                 color="danger"
                 size="lg"
-                href="/collection"
+                href="mailto:name@rapidtables.com?subject=I%20want%20to%20be%20part%20of%20the%20tribe"
                 target="_blank"
                 rel="noopener noreferrer"
               >
