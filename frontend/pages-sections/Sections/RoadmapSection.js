@@ -48,7 +48,7 @@ export default function AssociateSection() {
           <GridItem xs={12} sm={12} md={6} style={{ margin: "50px 0px", alignSelf: "center" }}>
             <InfoArea
               title="A social project"
-              description="The main focus is to finance the construction of the museum that will be done through donations and the sale of the first collection of posible 1000 NFTs with a unique historical value that will make up the museum. In this way we will add more people to our tribe (Holders of NFTs, collaborators and institutions that join the project) interested in the preservation of the indigenous worldview."
+              description="The main focus is to finance the construction of the museum that will be done through the sale of the first collection of 1000 NFTs where 950 are going to be minted and 50 are going to put in auction. Each of them will have a unique historical value that will make up the museum. In this way we will add more people to our tribe (Holders of NFTs, collaborators and institutions that join the project) interested in the preservation of the indigenous worldview."
               icon={GroupIcon}
               vertical
             />

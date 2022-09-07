@@ -26,7 +26,7 @@ export default function HeaderLinks(props) {
   const classes = useStyles()
   return (
     <List className={classes.list}>
-      <ListItem className={classes.listItem}>
+      {/* <ListItem className={classes.listItem}>
         <Button
           href="/collection"
           color="transparent"
@@ -34,12 +34,12 @@ export default function HeaderLinks(props) {
         >
           Collections
         </Button>
-      </ListItem>
-      <ListItem className={classes.listItem}>
+      </ListItem> */}
+      {/* <ListItem className={classes.listItem}>
         <Button href="/about" color="transparent" className={classes.navLink}>
           About us
         </Button>
-      </ListItem>
+      </ListItem> */}
       <ListItem className={classes.listItem}>
         <Button
           href="/historiographer"

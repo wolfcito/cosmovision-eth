@@ -24,6 +24,8 @@ import CTA from "/pages-sections/Sections/CTA.js";
 // Logos
 import logoWhite from '../public/img/logo_white.png';
 import logoDark from '../public/img/logo.png';
+import CollectionSection from "../pages-sections/Sections/CollectionSection";
+import SlugSection from "../pages-sections/Sections/SlugSection";
 
 const dashboardRoutes = [];
 
@@ -69,7 +71,7 @@ export default function LandingPage(props) {
                 rel="noopener noreferrer"
               >
                 <i className="fas fa-play" style={{paddingRight: 12}}/>
-                Join the Tribe
+                Join the tribe
               </Button>
             </GridItem>
           </GridContainer>
@@ -77,8 +79,11 @@ export default function LandingPage(props) {
       </Parallax>
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
+          <CollectionSection />
           <ProjectSection />
-          <CTA />
+          {/* Meter section de about */}
+          <SlugSection />
+          {/* <CTA /> */}
         </div>
       </div>
       <Footer />

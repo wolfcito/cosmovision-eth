@@ -14,6 +14,8 @@ import GridItem from "/components/Grid/GridItem.js";
 
   const useStyles = makeStyles(styles);
 
+  // Make it horizontal
+
   export default function CTA() {
     const classes = useStyles();
     return (
@@ -35,7 +37,7 @@ import GridItem from "/components/Grid/GridItem.js";
             style={{ marginTop: '30px'}}
             >
             <i className="fas fa-play" style={{paddingRight: 12}}/>
-            Join the Tribe
+            Make your donation
           </Button>
         </GridItem>
       </GridContainer>
