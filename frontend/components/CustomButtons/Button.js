@@ -81,4 +81,6 @@ RegularButton.propTypes = {
   className: PropTypes.string
 };
 
+RegularButton.displayName = "Regular button"
+
 export default RegularButton;

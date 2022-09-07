@@ -27,7 +27,6 @@ export default function SlugSection() {
           <Button
             color="danger"
             size="lg"
-            href="/collection"
             target="_blank"
             rel="noopener noreferrer"
             >
