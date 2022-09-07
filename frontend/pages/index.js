@@ -19,13 +19,13 @@ import styles from "/styles/jss/nextjs-material-kit/pages/landingPage.js";
 
 // Sections for this page
 import ProjectSection from "/pages-sections/Sections/ProjectSection.js";
-import CTA from "/pages-sections/Sections/CTA.js";
 
 // Logos
 import logoWhite from '../public/img/logo_white.png';
 import logoDark from '../public/img/logo.png';
 import CollectionSection from "../pages-sections/Sections/CollectionSection";
 import SlugSection from "../pages-sections/Sections/SlugSection";
+import SectionAbout from "../pages-sections/Sections/SectionAbout";
 
 const dashboardRoutes = [];
 
@@ -82,7 +82,7 @@ export default function LandingPage(props) {
           <CollectionSection />
           <ProjectSection />
           {/* Meter section de about */}
-          {/* <SectionAbout /> */}
+          <SectionAbout />
           <SlugSection />
           {/* <CTA /> */}
         </div>
