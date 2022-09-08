@@ -3,22 +3,16 @@ import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 
 // @material-ui/icons
-import AccountTree from '@material-ui/icons/AccountTree'
-import Nature from '@material-ui/icons/Nature'
-import Update from '@material-ui/icons/Update'
+import AccountTree from '@material-ui/icons/History'
 // core components
 import GridContainer from '/components/Grid/GridContainer.js'
 import GridItem from '/components/Grid/GridItem.js'
 import InfoArea from '/components/InfoArea/InfoArea.js'
-// images
-import ImageOne from '../../public/img/image_one.jpg'
-import ImageTwo from '../../public/img/image_two.jpg'
-import ImageThree from '../../public/img/image_three.jpg'
 
 import Donnors1 from '../../public/img/associate.jpeg'
 
 import styles from '/styles/jss/nextjs-material-kit/pages/landingPageSections/productStyle.js'
-import Image from 'next/image'
+import ImageCircular from '/components/CustomImage/ImageCircular'
 
 const useStyles = makeStyles(styles)
 
@@ -30,39 +24,21 @@ export default function AssociateSection() {
         <GridItem xs={12} sm={12} md={8}>
           <h2 className={classes.title}>Associates</h2>
           <h4 style={{ color: 'gray' }}>
-            Muchas personas han encontrado un significado especial en lo que
-            hacemos y quieren colaborar de mayor manera en preservar la mayor
-            cantidad de información, artilegios, artesanias, pensamientos etc.
-            es por ello que han decidido hacerse socios del proyecto para estar
-            mas cerca y colaborar de una manera mas representativa
+            Many people have found a special meaning in what we do and want to
+            collaborate in a greater way to preserve as much information,
+            artifacts, crafts, thoughts, etc. that is why they have decided to
+            become partners of the project to be closer and collaborate in a
+            more representative manner.
           </h4>
         </GridItem>
       </GridContainer>
       <div>
         <GridContainer>
           <GridItem xs={12} sm={12} md={6} style={{ margin: '50px 0px' }}>
-            <div
-              style={{
-                borderRadius: '50%',
-                width: '300px',
-                height: '300px',
-                position: 'relative',
-                overflow: 'hidden',
-                margin: '30px auto',
-              }}
-            >
-              <Image
-                style={{
-                  width: 'auto',
-                  height: '100%',
-                  marginLeft: '-100px',
-                }}
-                height={300}
-                width={300}
-                src={Donnors1.src}
-                alt="descentralized"
-              />
-            </div>
+            <ImageCircular
+              srcImage={Donnors1}
+              alt={'Love for Latin American cultures'}
+            />
           </GridItem>
           <GridItem
             xs={12}
@@ -79,7 +55,7 @@ export default function AssociateSection() {
           </GridItem>
           <GridItem xs={12} sm={12} md={12} style={{ marginTop: 50 }}>
             <InfoArea
-              title="Wallets joined to the collection"
+              title="Wallets associated with the collection"
               description="0x5B38Da6a701c568545dCfcB03FcB875f56beddC4
               0xAb8483F64d9C6d1EcF9b849Ae677dD3315835cb2
               0x4B20993Bc481177ec7E8f571ceCaE8A9e22C02db
@@ -110,7 +86,6 @@ export default function AssociateSection() {
               0x4B20993Bc481177ec7E8f571ceCaE8A9e22C02db
               0xAb8483F64d9C6d1EcF9b849Ae677dD3315835cb2
               0x5B38Da6a701c568545dCfcB03FcB875f56beddC4"
-              icon={Update}
               vertical
             />
           </GridItem>

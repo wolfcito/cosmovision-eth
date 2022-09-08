@@ -15,24 +15,36 @@ import styles from '/styles/jss/nextjs-material-kit/pages/landingPageSections/wo
 import ImageThree from '../../public/img/histories.jpg'
 import Image from 'next/image'
 
+import InputAdornment from '@material-ui/core/InputAdornment'
+import Category from '@material-ui/icons/Category'
+import Face from '@material-ui/icons/Face'
+import Chat from '@material-ui/icons/Chat'
+import TitleIcon from '@material-ui/icons/Title'
+import LinkIcon from '@material-ui/icons/Link'
+import Link from 'next/link'
+
 const useStyles = makeStyles(styles)
 
 const SaveHistory = () => {
   const classes = useStyles()
 
-  const InputHistory = ({ placeholder = 'Type here' }) => {
+  const InputHistory = ({ labelText = 'Type here', Icon }) => {
     return (
-      <GridItem xs={12} sm={12} md={12} lg={12}>
-        <CustomInput
-          id="regular"
-          inputProps={{
-            placeholder: placeholder,
-          }}
-          formControlProps={{
-            fullWidth: true,
-          }}
-        />
-      </GridItem>
+      <CustomInput
+        labelText={labelText}
+        id="first"
+        formControlProps={{
+          fullWidth: true,
+        }}
+        inputProps={{
+          type: 'text',
+          endAdornment: (
+            <InputAdornment position="end">
+              <Icon className={classes.inputIconsColor} />
+            </InputAdornment>
+          ),
+        }}
+      />
     )
   }
 
@@ -47,25 +59,26 @@ const SaveHistory = () => {
           style={{ display: 'flex', flexDirection: 'column' }}
         >
           <h4 className={classes.description}>
-            <GridContainer>
-              <InputHistory placeholder="Type a title" />
-              <InputHistory placeholder="Type a description" />
-              <InputHistory placeholder="Type a URL image" />
-              <InputHistory placeholder="Type a historiographer" />
-              <InputHistory placeholder="Type a category" />
+            <GridContainer style={{ margin: '10px' }}>
+              <InputHistory labelText="Title" Icon={TitleIcon} />
+              <InputHistory labelText="Description" Icon={Chat} />
+              <InputHistory labelText="URL image" Icon={LinkIcon} />
+              <InputHistory labelText="Historiographer" Icon={Face} />
+              <InputHistory labelText="Category" Icon={Category} />
             </GridContainer>
           </h4>
-          <Button
-            color="danger"
-            size="lg"
-            href="/collection"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ marginTop: '30px' }}
-          >
-            <i className="fas fa-play" style={{ paddingRight: 12 }} />
-            Save
-          </Button>
+          <Link href="/collection">
+            <Button
+              color="primary"
+              size="lg"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ marginTop: '30px' }}
+            >
+              <i className="fas fa-save" style={{ paddingRight: 12 }} />
+              Save
+            </Button>
+          </Link>
         </GridItem>
         <GridItem xs={12} sm={12} md={6} style={{ marginTop: '10px' }}>
           <div
