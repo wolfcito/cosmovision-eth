@@ -1,21 +1,22 @@
-import React from "react";
+import React from 'react'
 // react components for routing our app without refresh
-import Link from "next/link";
+import Link from 'next/link'
 // @material-ui/core components
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from '@material-ui/core/styles'
 // @material-ui/icons
 
 // core components
-import GridContainer from "/components/Grid/GridContainer.js";
-import GridItem from "/components/Grid/GridItem.js";
-import Button from "/components/CustomButtons/Button.js";
+import GridContainer from '/components/Grid/GridContainer.js'
+import GridItem from '/components/Grid/GridItem.js'
+import Button from '/components/CustomButtons/Button.js'
 
-import styles from "/styles/jss/nextjs-material-kit/pages/componentsSections/exampleStyle.js";
+import styles from '/styles/jss/nextjs-material-kit/pages/componentsSections/exampleStyle.js'
+import Image from 'next/image'
 
-const useStyles = makeStyles(styles);
+const useStyles = makeStyles(styles)
 
 export default function SectionExamples() {
-  const classes = useStyles();
+  const classes = useStyles()
   return (
     <div className={classes.section}>
       <div className={classes.container}>
@@ -23,14 +24,14 @@ export default function SectionExamples() {
           <GridItem xs={12} sm={12} md={6}>
             <Link href="/landing">
               <a className={classes.link}>
-                <img
+                <Image
                   src="/img/landing.jpg"
                   alt="..."
                   className={
                     classes.imgRaised +
-                    " " +
+                    ' ' +
                     classes.imgRounded +
-                    " " +
+                    ' ' +
                     classes.imgFluid
                   }
                 />
@@ -43,14 +44,14 @@ export default function SectionExamples() {
           <GridItem xs={12} sm={12} md={6}>
             <Link href="/profile">
               <a className={classes.link}>
-                <img
+                <Image
                   src="/img/profile.jpg"
                   alt="..."
                   className={
                     classes.imgRaised +
-                    " " +
+                    ' ' +
                     classes.imgRounded +
-                    " " +
+                    ' ' +
                     classes.imgFluid
                   }
                 />
@@ -63,5 +64,5 @@ export default function SectionExamples() {
         </GridContainer>
       </div>
     </div>
-  );
+  )
 }

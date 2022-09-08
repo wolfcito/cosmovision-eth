@@ -1,59 +1,75 @@
-import React from "react";
+import React from 'react'
 // @material-ui/core components
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from '@material-ui/core/styles'
 
 // @material-ui/icons
-import AccountTree from "@material-ui/icons/AccountTree";
-import Nature from "@material-ui/icons/Nature";
-import Update from "@material-ui/icons/Update";
+import AccountTree from '@material-ui/icons/AccountTree'
+import Nature from '@material-ui/icons/Nature'
+import Update from '@material-ui/icons/Update'
 // core components
-import GridContainer from "/components/Grid/GridContainer.js";
-import GridItem from "/components/Grid/GridItem.js";
-import InfoArea from "/components/InfoArea/InfoArea.js";
+import GridContainer from '/components/Grid/GridContainer.js'
+import GridItem from '/components/Grid/GridItem.js'
+import InfoArea from '/components/InfoArea/InfoArea.js'
 // images
-import ImageOne from '../../public/img/image_one.jpg';
-import ImageTwo from '../../public/img/image_two.jpg';
-import ImageThree from '../../public/img/image_three.jpg';
+import ImageOne from '../../public/img/image_one.jpg'
+import ImageTwo from '../../public/img/image_two.jpg'
+import ImageThree from '../../public/img/image_three.jpg'
 
-import Donnors1 from '../../public/img/associate.jpeg';
+import Donnors1 from '../../public/img/associate.jpeg'
 
+import styles from '/styles/jss/nextjs-material-kit/pages/landingPageSections/productStyle.js'
+import Image from 'next/image'
 
-import styles from "/styles/jss/nextjs-material-kit/pages/landingPageSections/productStyle.js";
-
-const useStyles = makeStyles(styles);
+const useStyles = makeStyles(styles)
 
 export default function AssociateSection() {
-  const classes = useStyles();
+  const classes = useStyles()
   return (
     <div className={classes.section}>
       <GridContainer justify="center">
         <GridItem xs={12} sm={12} md={8}>
           <h2 className={classes.title}>Associates</h2>
-          <h4 style={{color: "gray"}}>
-          Muchas personas han encontrado un significado especial en lo que hacemos y quieren colaborar de mayor manera en preservar la mayor cantidad de información, artilegios, artesanias, pensamientos etc. es por ello que han decidido hacerse socios del proyecto para estar mas cerca y colaborar de una manera mas representativa
+          <h4 style={{ color: 'gray' }}>
+            Muchas personas han encontrado un significado especial en lo que
+            hacemos y quieren colaborar de mayor manera en preservar la mayor
+            cantidad de información, artilegios, artesanias, pensamientos etc.
+            es por ello que han decidido hacerse socios del proyecto para estar
+            mas cerca y colaborar de una manera mas representativa
           </h4>
         </GridItem>
       </GridContainer>
       <div>
         <GridContainer>
-          <GridItem xs={12} sm={12} md={6} style={{ margin: "50px 0px" }}>
-            <div style={{ 
-              borderRadius: '50%',
-              width: '300px',
-              height: '300px',
-              position: 'relative',
-              overflow: 'hidden',
-              margin: '30px auto'
-            }}>
-              <img style={{
-                width: 'auto',
-                height: '100%',
-                marginLeft: '-100px'
-              }} 
-              src={Donnors1.src} alt='descentralized' />
+          <GridItem xs={12} sm={12} md={6} style={{ margin: '50px 0px' }}>
+            <div
+              style={{
+                borderRadius: '50%',
+                width: '300px',
+                height: '300px',
+                position: 'relative',
+                overflow: 'hidden',
+                margin: '30px auto',
+              }}
+            >
+              <Image
+                style={{
+                  width: 'auto',
+                  height: '100%',
+                  marginLeft: '-100px',
+                }}
+                height={300}
+                width={300}
+                src={Donnors1.src}
+                alt="descentralized"
+              />
             </div>
           </GridItem>
-          <GridItem xs={12} sm={12} md={6} style={{ margin: "50px 0px", alignSelf: "center" }}>
+          <GridItem
+            xs={12}
+            sm={12}
+            md={6}
+            style={{ margin: '50px 0px', alignSelf: 'center' }}
+          >
             <InfoArea
               title="Love for Latin American cultures"
               description="All donations reached the different tribes, ethnic groups, communities that represent our entire culture and our past."
@@ -64,7 +80,7 @@ export default function AssociateSection() {
           <GridItem xs={12} sm={12} md={12} style={{ marginTop: 50 }}>
             <InfoArea
               title="Wallets joined to the collection"
-              description='0x5B38Da6a701c568545dCfcB03FcB875f56beddC4
+              description="0x5B38Da6a701c568545dCfcB03FcB875f56beddC4
               0xAb8483F64d9C6d1EcF9b849Ae677dD3315835cb2
               0x4B20993Bc481177ec7E8f571ceCaE8A9e22C02db
               0x78731D3Ca6b7E34aC0F824c42a7cC18A495cabaB
@@ -93,7 +109,7 @@ export default function AssociateSection() {
               0x78731D3Ca6b7E34aC0F824c42a7cC18A495cabaB
               0x4B20993Bc481177ec7E8f571ceCaE8A9e22C02db
               0xAb8483F64d9C6d1EcF9b849Ae677dD3315835cb2
-              0x5B38Da6a701c568545dCfcB03FcB875f56beddC4'
+              0x5B38Da6a701c568545dCfcB03FcB875f56beddC4"
               icon={Update}
               vertical
             />
@@ -101,5 +117,5 @@ export default function AssociateSection() {
         </GridContainer>
       </div>
     </div>
-  );
+  )
 }
