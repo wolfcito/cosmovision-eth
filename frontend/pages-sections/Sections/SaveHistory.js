@@ -13,6 +13,7 @@ import Button from '/components/CustomButtons/Button.js'
 import styles from '/styles/jss/nextjs-material-kit/pages/landingPageSections/workStyle.js'
 
 import ImageThree from '../../public/img/histories.jpg'
+import Image from 'next/image'
 
 const useStyles = makeStyles(styles)
 
@@ -62,7 +63,7 @@ const SaveHistory = () => {
             rel="noopener noreferrer"
             style={{ marginTop: '30px' }}
           >
-            <i className="fas fa-play" style={{paddingRight: 12}} />
+            <i className="fas fa-play" style={{ paddingRight: 12 }} />
             Save
           </Button>
         </GridItem>
@@ -77,12 +78,8 @@ const SaveHistory = () => {
               margin: '30px auto',
             }}
           >
-            <img
-              style={{
-                width: 'auto',
-                height: '100%',
-                marginLeft: '-100px',
-              }}
+            <Image
+              layout="fill"
               src={ImageThree.src}
               alt="histories of communities"
             />
