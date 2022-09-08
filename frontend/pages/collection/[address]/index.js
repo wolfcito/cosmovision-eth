@@ -24,7 +24,6 @@ import logoWhite from '../../../public/img/logo_white.png'
 import logoDark from '../../../public/img/logo.png'
 
 import { useRouter } from 'next/router'
-import { element } from 'prop-types'
 
 const dashboardRoutes = []
 

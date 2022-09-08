@@ -3,22 +3,16 @@ import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 
 // @material-ui/icons
-import AccountTree from '@material-ui/icons/AccountTree'
-import Nature from '@material-ui/icons/Nature'
-import Update from '@material-ui/icons/Update'
+import AccountTree from '@material-ui/icons/Nature'
 // core components
 import GridContainer from '/components/Grid/GridContainer.js'
 import GridItem from '/components/Grid/GridItem.js'
 import InfoArea from '/components/InfoArea/InfoArea.js'
-// images
-import ImageOne from '../../public/img/image_one.jpg'
-import ImageTwo from '../../public/img/image_two.jpg'
-import ImageThree from '../../public/img/image_three.jpg'
 
 import Donnors1 from '../../public/img/donnors1.jpeg'
 
 import styles from '/styles/jss/nextjs-material-kit/pages/landingPageSections/productStyle.js'
-import Image from 'next/image'
+import ImageCircular from '/components/CustomImage/ImageCircular'
 
 const useStyles = makeStyles(styles)
 
@@ -34,28 +28,7 @@ export default function ListDonnors() {
       <div>
         <GridContainer>
           <GridItem xs={12} sm={12} md={6} style={{ margin: '50px 0' }}>
-            <div
-              style={{
-                borderRadius: '50%',
-                width: '300px',
-                height: '300px',
-                position: 'relative',
-                overflow: 'hidden',
-                margin: '30px auto',
-              }}
-            >
-              <Image
-                style={{
-                  width: 'auto',
-                  height: '100%',
-                  marginLeft: '-100px',
-                }}
-                height={300}
-                width={300}
-                src={Donnors1.src}
-                alt="descentralized"
-              />
-            </div>
+            <ImageCircular srcImage={Donnors1} alt={'descentralized'} />
           </GridItem>
           <GridItem
             xs={12}
@@ -72,7 +45,7 @@ export default function ListDonnors() {
           </GridItem>
           <GridItem xs={12} sm={12} md={12} style={{ margin: '50px 0' }}>
             <InfoArea
-              title="Wallets joined to the collection"
+              title="Wallets donnors with the collection"
               description="0x5B38Da6a701c568545dCfcB03FcB875f56beddC4
               0xAb8483F64d9C6d1EcF9b849Ae677dD3315835cb2
               0x4B20993Bc481177ec7E8f571ceCaE8A9e22C02db
@@ -103,7 +76,6 @@ export default function ListDonnors() {
               0x4B20993Bc481177ec7E8f571ceCaE8A9e22C02db
               0xAb8483F64d9C6d1EcF9b849Ae677dD3315835cb2
               0x5B38Da6a701c568545dCfcB03FcB875f56beddC4"
-              icon={Update}
               vertical
             />
           </GridItem>
