@@ -1,6 +1,6 @@
 # Cosmovision
 
-![Uploading Cosmovision-Ethereum-Developer-Program.png…]()
+![Cosmovision-Ethereum-Developer-Program](https://user-images.githubusercontent.com/37456799/189764633-ef1f9e76-d8dd-4920-9ef3-6a46c395d7c7.png)
 
 As Latin Americans, we understand the magnitude of our roots, but these are cultures that are slowly being lost in history. What if we save them in a decentralized database? This project was generated as a team during Platzi's Ethereum Developer Program and seeks to be a turning point in preserving and supporting aboriginal cultures in Latin America; using Blockchain technology, we aim to globalize knowledge about these societies while generating a sense of ownership in our region.
 
